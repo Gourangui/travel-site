@@ -1,0 +1,19 @@
+.row{
+    display: grid;
+
+    &--gutters{
+        gap: 20px;
+
+        @mixin atSmall{
+            gap: 65px;
+        }
+    }
+
+    &--2fr3fr{
+        grid-template-columns: 1fr;
+
+        @mixin atSmall{
+            grid-template-columns: 2fr 3fr;
+        }
+    }
+}
