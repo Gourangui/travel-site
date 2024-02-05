@@ -9,11 +9,27 @@
         }
     }
 
+    &--gutters-large{
+        gap: 25px 35px;
+
+        @mixin atSmall{
+            gap: 55px 100px;
+        }
+    }
+
     &--2fr3fr{
         grid-template-columns: 1fr;
 
         @mixin atSmall{
             grid-template-columns: 2fr 3fr;
+        }
+    }
+
+    &--2fr{
+        grid-template-columns: 1fr;
+
+        @mixin atSmall{
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
