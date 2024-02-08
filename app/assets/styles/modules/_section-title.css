@@ -5,10 +5,17 @@
 
     @mixin atSmall{
         font-size: 3.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     strong{
         font-weight: 500;
+    }
+
+    &--blue{
+        color: $mainBlue;
     }
 
     &__icon{
