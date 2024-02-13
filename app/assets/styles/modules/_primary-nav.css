@@ -1,0 +1,42 @@
+.primary-nav{
+
+    order: 1;
+
+    @mixin atMedium{
+        margin-right: 1rem;
+        order: unset;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5em;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        @mixin atMedium{
+            align-items: unset;
+            gap: 1em;
+        }
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a {
+        color: #fff;
+        font-size: .8rem;
+        font-weight: 300;
+        padding: 5px 8px;
+        text-decoration: none;
+        background-color: rgba($mainBlue, .5);
+
+        @mixin atMedium{
+            font-size: 1rem;
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+}
